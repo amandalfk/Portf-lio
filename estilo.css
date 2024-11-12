@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #5f39672b;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #e24a70;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #e24a70;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-list,
+ul {
+    list-style: none;
+}
+
+.portfolio-list li,
+ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.portfolio-list li a {
+    color: #e24a70;
+    text-decoration: none;
+}
+
+.portfolio-list li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Estilos básicos para a seção */
+.about-me {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #5c575d2b;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 8px 15px #e24a70;
+    overflow: hidden;
+}
+
+/* Estilos para a imagem */
+.about-image {
+    width: 30%;
+    height: auto;
+    border-radius: -50%;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para o texto */
+.about-text {
+    width: 60%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #e24a70;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e24a70;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Animação ao passar o mouse */
+.about-image:hover {
+    transform: scale(1.1);
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+.portfolio {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #e24a70;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .portfolio-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .portfolio-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .portfolio-info a {
+    text-decoration: none;
+    color: #e24a70;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .portfolio-info a:hover {
+    color: #e24a70;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .education {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .education-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Garante que em telas pequenas os itens se ajustem */
+  }
+  
+  .education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #e24a70;
+    flex: 1;
+    min-width: 300px; /* Define uma largura mínima para os itens */
+  }
+  
+  .education-item h3 {
+    font-size: 1.5rem;
+    color: #e06a88;
+    margin-bottom: 10px;
+  }
+  
+  .education-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .education-item strong {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+
+
+
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0;
+    color: #e24a70;
+  }
+  
+  .courses-certificates {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.courses {
+    margin-bottom: 40px;
+}
+
+.courses h3 {
+    font-size: 1.8rem;
+    color: #e24a70;
+    margin-bottom: 10px;
+}
+
+.courses p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.course-topics {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 cards por linha */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.course-topic-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #e24a70;
+    width: 180px; /* Reduz a largura dos cards */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-topic-card h4 {
+    font-size: 1rem;
+    color: #e06a88;
+    margin-bottom: 8px;
+}
+
+.course-topic-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.course-topic-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 992px) {
+    .course-topics {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards por linha em telas médias */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .course-topics {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em telas pequenas */
+    }
+}
+
+  
+.certificate-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas, uma para cada certificado */
+  gap: 20px;
+}
+
+.certificate-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #e24a70;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info p {
+  margin-bottom: 5px;
+}
+
+.card-info strong {
+  font-size: 1.1rem;
+  color: #e06a88;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 992px) {
+  .certificate-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .certificate-cards {
+      grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+  }
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-neutral-0: #e24a70;
+    --color-neutral-10: #e24a70;
+    --color-neutral-30: #100a0a;
+    --color-neutral-40: #030202;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40)
+
+}
+
+.footerlink {
+    text-decoration: dashed;
+}
+
+#footercontent {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footercontatos h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footeredesocial {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footeredesocial .footerlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+
+#footeredesocial .footerlink i {
+    font-size: 1.25rem;
+}
+
+#footeredesocial .footerlink:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#gmail {
+  background-color: #d14836; /* Cor padrão do Gmail */
+  color: #ffffff; /* Cor branca para o ícone */
+}
+
+#github {
+  background-color: #333; /* Cor padrão do GitHub */
+  color: #ffffff; /* Cor branca para o ícone */
+}
+
+
+
+
+.footerlista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footerlista .footerlink {
+    color: var(--color-neutral-30);
+    transition: all 0.2s;
+}
+
+.footerlista .footerlink:hover {
+    color: #a20839;
+}
+
+
+
+#footercopyrights {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width:768px) {
+    #footercontent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+    }
+}
+
+@media screen and (max-width:426px) {
+    #footercontent {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+  
+
+
+
